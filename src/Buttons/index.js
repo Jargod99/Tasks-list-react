@@ -4,8 +4,8 @@ const Buttons = ({ tasks, hideTask }) => (
     !!tasks.length && (
         <div className="taskListButtons">
             <button
-                className={`headerButton `}
-                disabled={tasks.find(({ done }) => done)? "": "disabled"}
+                className={`headerButton ${tasks.find(({ done }) => done)? "": "disabled"}`}
+                
             >
                 {tasks.some(({ done }) => done) && hideTask ? "Pokaż" : "Ukryj"} ukończone
             </button>
