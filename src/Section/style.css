@@ -1,0 +1,42 @@
+.section {
+    background-color: white;
+    margin: 20px 0;
+
+}
+
+.section__header {
+    border-bottom: 1px solid #ddd;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 768px) {
+    .section__header {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+.section__title{
+    padding:20px;
+    margin: 0;
+}
+.taskListButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px 20px 10px 0 ;
+}
+
+@media (max-width:768px) {
+    .taskListButtons {
+         grid-template-columns:1fr;
+         margin:10px;
+    }
+}
+
+.section__body {
+    padding: 20px;
+}

@@ -1,0 +1,49 @@
+.taskDone{
+    text-decoration-line: line-through;
+}
+
+.tasksList{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.taskList{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.taskListHidden{
+    display: none;
+}
+
+.listButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    transition: 1.5s;
+}
+.listButton:hover{
+    transform: scale(0.8);
+}
+
+.toggleButton{
+    background-color: teal ;
+}
+
+.toggleButton:hover{
+    background-color: hsl(180, 100%, 15%);
+}
+
+.removeButton{
+    background-color: crimson ;
+}
+
+.removeButton:hover{
+    background-color: hsl(348, 83%, 37%);
+}

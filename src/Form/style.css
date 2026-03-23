@@ -1,0 +1,30 @@
+.form{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width:768px) {
+    .form{
+       grid-template-columns: 1fr ; 
+    }
+}
+.newTask{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form__button{
+    background-color: teal;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1.5s;
+    border: none;
+}
+
+.form__button:hover{
+    background-color: hsl(180, 100%, 35%);
+    transform: scale(1.2);
+}
